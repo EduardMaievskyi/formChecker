@@ -1,0 +1,50 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title></title>
+		<meta charset='UTF-8'>
+		<link rel='stylesheet' href='../css/form1.css'>
+	</head>
+	<body>
+		<form action='?' method='GET' id='form2'>
+			<div class='b-form__message b-form__message_error'>
+			Форма заполнена неверно!
+			</div>
+			<table border='1'>
+				<tr>
+					<td><label class='b-form__label_name'>Название товара</label></td>
+					<td><input type='text' name='name' class='b-form__name b-textfield'></td>
+				</tr>
+				<tr>
+					<td><label class='b-form__label_brand'>Марка</label></td>
+					<td><input type='text' name='brand' class='b-form__brand b-textfield'></td>
+				</tr>
+				<tr>
+					<td><label class='b-form__label_price'>Цена</label></td>
+					<td><input type='text' name='price' class='b-form__price b-textfield'></td>
+				</tr>
+
+				<tr>
+					<td><label class='b-form__label_description'>Описание</label></td>
+					<td>
+						<textarea name='description' class='b-form__description b-textfield'></textarea>
+					</td>
+				</tr>
+				<tr>
+					<td></td>
+					<td>
+						<input type='submit' value='OK' class='b-form__ok-button'>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<script src="../scripts/jquery-3.4.1.min.js"></script>
+		<!-- <script src="../scripts/component.js"></script> 
+		<script src="../scripts/settings.js"></script>
+		<script src="../scripts/settings-init.js"></script>
+		 --><script src="../scripts/form-checker.js"></script>
+		<script>
+			let f2 = new FormChecker("#form2");
+		</script>
+	</body>
+</html>
